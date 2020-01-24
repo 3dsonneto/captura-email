@@ -12,44 +12,97 @@
 <body>
   <nav>
     <div class="col-12 top-bar">
-      <h2>Inscreva-se agora e ganhe bonus exclusivos!</h2>
+      <h2>Compre agora e ganhe um poster!</h2>
     </div>
   </nav>
+
   <header>
     <div class="container space-top">
+      <!-- Produto -->
       <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <figure >
-            <img src="img/ebook-capa.png" alt="">
+            <img src="img/BOOK.jpg" alt="">
           </figure>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <p>Descubra quais tipos de post você deve utilizar para atrair mais tráfego e gerar mais resultados. Venda seu produto de forma 100% digital e aumente seu alcance. Com o Marketing Digital, conseguimos medir em detalhes os resultados de cada campanha e saber o que funciona ou não. Assim, podemos continuar investindo nas ações que dão melhor retorno.
-              Separar os Leads conforme o interesse deles e, a partir disso, promover ações com foco muito maior é o segundo diferencial do Marketing Digital. Chamamos isso de segmentação. Seja por meio de busca orgânica no Google, email, anúncios ou redes sociais, potenciais clientes são atraídos de forma crescente para o site da sua empresa, aumentando as chances de vendas.
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p>
+            Em 2044, Wade Watts, assim como o resto da humanidade, prefere a realidade virtual do jogo OASIS ao mundo real. Quando o criador do jogo, o excêntrico James Halliday morre, os jogadores devem descobrir a chave de um quebra-cabeça diabólico para conquistar sua fortuna inestimável. Para vencer, porém, Watts tem de abandonar a existência virtual e ceder a uma vida de amor e realidade da qual sempre tentou fugir.
           </p>
         </div>
+        <!-- Autor -->
+      <div class="row row-autor">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h4>Sobre o Autor</h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <figure class="foto-ernesto">
+            <img src="img/ernesto.jpg" alt="">
+          </figure>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <h5><strong>Ernest Cline</strong></h5>
+          <p>Ernest Cline já trabalhou como cozinheiro, peixeiro, atendente de locadoras de vídeo elitista e auxiliar de suporte técnico. Mas sua principal ocupação sempre foi ser nerd, e ele acabou deixando de lado essas promissoras carreiras para expressar em tempo integral o amor pela cultura pop, trabalhando como versista e roteirista. Para sua surpresa, o filme Fanboys, baseado em um de seus roteiros, tornou-se um fenômeno cult. Atualmente, Cline vive em Austin, no Texas, com a esposa e a filha e uma grande coleção de clássicos de videogame.</p>
+        </div>
+      </div>
       </div>
     </div>
   </header>
   <!-- Section do botão -->
   <section>
-    <div class="container ">
-      <div class="row price-bar">
-        <div class="col-md-6 col-sm-12 col-12">
-          <p>VALOR PROMOCIONAL:</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 space-bottom">
+          <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#telaPoster">Escolha seu poster
+          </button>
         </div>
-        <div class="col-md-2 col-sm-6 col-6  valor-antes">
-          <p>R$ 39,99</p>
-        </div>
-        <div class="col-md-2 col-sm-6 col-6 valor-depois">
-          <p>GRATIS!</p>
-        </div>
-        <div class="col-md-2 col-sm-12 col-12">
-          <button type="button" class="btn btn-primary btn-block ">Garanta o seu!</button>
+        <div class="col-md-6 col-sm-12 space-bottom">
+          <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#telaCompra"><i class="far fa-envelope"></i>Compre Agora
+          </button>
         </div>
       </div>
     </div>
   </section>
+<!-- Modal Poster -->
+  <div class="modal fade" id="telaPoster" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Digite sua mensagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="email" class="form-control space-margin" id="emailTxt" placeholder="nome@email.com">
+          <textarea class="form-control" id="areaTxt" rows="3" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal" onclick="enviar()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Compra -->
+  <div class="modal fade" id="telaCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Digite seu email para continuar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="email" class="form-control space-margin" id="emailTxt" placeholder="nome@email.com">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal" onclick="enviar()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

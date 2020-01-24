@@ -12,7 +12,6 @@ nav{
 
 h2{
   text-align: center;
-  padding: 25px 0;
 }
 
 /* HEADER */
@@ -28,10 +27,18 @@ header p {
 }
 
 img{
+  width: 90%;
+}
+
+.row-autor{
+  padding-top: 20px;
+}
+
+.foto-ernesto{
   width: 50%;
 }
 
-/* PRICE BAR */
+/* SECTION BAR */
 section{
   width: 100%;
   height: 10%;
@@ -39,10 +46,7 @@ section{
   text-align: center;
 }
 
-.valor-antes{
-  text-decoration: line-through;
-}
-
-.price-bar{
-  
+.space-bottom{
+  padding-top: 20px;
+  padding-bottom: 5px;
 }

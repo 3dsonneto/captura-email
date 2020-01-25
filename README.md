@@ -1,4 +1,4 @@
-##Captura de Email
+## Captura de Emails
 
 ![Imgur](https://i.imgur.com/nkbndwz.png)
 
